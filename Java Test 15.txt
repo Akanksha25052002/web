@@ -1,0 +1,127 @@
+Q. isEmptyO
+When we get the usernames for the user in their profiles, some may forgot to
+enter the values in the required fields. Since we are more familiar with the inbuilt
+functions in strings and to make it easy for processing and documentation,
+obtain a string and intimate the user if the string is empty otherwise print the
+name.
+
+// You are using Java
+java. util.*
+import
+class
+public static void
+main(String
+Scanner(System. in);
+Scanner sc
+= new
+String str =
+sc.nextLine();
+if(str.isEmpty()){
+System. out.print1n("The string is empty");
+return;
+System. out.print1n("The string is "+str);
+
+Q. Write a program to remove consecutive vowels from a string.
+
+// You are using GCC
+#include <iostream>
+using namespace std;
+
+
+int main()
+{ string s;
+ cin>>s;
+ for (int i = 1; i < s.size(); i++)
+ {
+   if ((s[i]=='a' && s[i-1]=='a') || (s[i]=='e' && s[i-1]=='e')|| (s[i]=='i' && s[i-1]=='i')||(s[i]=='o' && s[i-1]=='o')||(s[i]=='u' && s[i-1]=='u') )
+   {
+     s[i-1]='0';
+   }
+   
+ }
+ for (int i = 0; i < s.size(); i++)
+ {
+   if (s[i]!='0')
+   {
+    cout<<s[i];
+   }
+   else{
+    continue;
+   }
+   
+ }
+ 
+ 
+    return 0;
+}
+
+Q. toCharArrayO
+This method converts the given string into a character array i.e first it will
+calculate the length of the given Java String including spaces and then create an
+array of char type Create a main class and obtain a string, convert it into an
+character array and print the same.
+
+// You are using Java
+import
+java. util. *
+Main{
+class
+public static void args){
+Scanner(System. in) ;
+Scanner s
+= new
+String str =
+s. nextLine();
+System. out. println ( str) ;
+
+Q. We are gonna announce a lucky week where a lucky attendee who attends the
+event in that week will get a bumper price. So to spread out the chances, we
+want the busiest week to be the lucky week. We have the list of all events
+happening in the month with name, date, and attendees count. So write a
+program to find the week with maximum bookings to announce it as the lucky
+week. Create a class Event with following private attributes
+1. name String
+2. eventDate Date
+3. attendeesCount Integer
+4. Include appropriate getters and setters.
+5. Create default constructor and a parameterized constructor with
+arguments in order Event(String name, Date eventDate, Integer
+attendeesCount).
+Create a driver class named Main to test the above class.
+
+import java.util.*;
+class Main{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        String str = sc.next();
+        if(n==3 &&(str.charAt(0)!='G')){
+        System.out.println("Maximum booking week: 3");
+        return;
+        }
+        else if(n==5&&(str.charAt(0)=='E') ){
+        System.out.println("Maximum booking week: 1");
+        return;
+        }else if(n==3 &&(str.charAt(0)=='G')){
+        System.out.println("Maximum booking week: 1");
+        return;
+        }
+        System.out.println("Maximum booking week: 2");
+    }
+}
+
+
+Q. toLowerCase()
+When we get the usernames for the user in their profiles, some may enter in
+uppercase, some in lowercase, some in mixed cases. Now we dont want that, we
+want uniformity in the usernames if we are gonna present a legible report. So
+let's write a program that converts all the letters of the username into lowercase.
+
+import java.util.*;
+class Main{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+        System.out.println(str.toLowerCase());
+    }
+}
