@@ -1,0 +1,52 @@
+.btn2{
+    color: white;
+    background-color: red;
+    
+    padding: 10px;
+    margin: 20px 20px 40px 70px;
+    border-radius: 15px;
+    width: 5rem;
+    
+}
+.btn1{
+    background-color: red;
+    padding: 15px;
+    color: white;
+    margin: 40px 30px 20px 60px;
+    border-radius: 15px;
+}
+.btn3{
+    color: white;
+    background-color: red;
+    
+    padding: 10px;
+    margin-left: 3rem;
+    margin-top: 5rem;
+    border-radius: 15px;
+    width: 5rem;
+    
+}
+.btn1:hover{
+    background-color: green;
+    cursor: pointer;
+    color: black;
+}
+.btn3:hover{
+    background-color: green;
+    color: black;
+}
+
+div{
+    background-color: pink;
+    margin: 40px 300px 50px 300px;
+    padding: 20px;
+    border: 30px solid lightblue;
+    width: 25rem;
+    height: 30rem;
+    
+}
+div1{
+    font-size: 30px;
+    margin-top: 7rem;
+   
+}

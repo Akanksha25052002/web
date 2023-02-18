@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+        <link rel="stylesheet" href="button.css">
+</head>
+<body>
+    <div>
+
+        <center>
+            <div1 class="btn" id="h">
+               
+                   <b>Monday</b><br>
+                
+            </div1>
+            <button type="button" class="btn1">Change background</button><br>
+            <button type="button" class="btn2">Show</button>
+            <button type="button" class="btn3" id="hm">Hide Me</button>
+        </center>
+        
+    </div>
+    <script>
+        const targetDiv = document.getElementById("h");
+        const btn = document.getElementById("hm");
+        btn.onclick= function() {
+            if(targetDiv.style.display !=="none") {
+                targetDiv.style.display="none";
+            }
+            else {
+                targetDiv.style.display ="block";
+            }
+        };
+    </script>
+</body>
+</html>
