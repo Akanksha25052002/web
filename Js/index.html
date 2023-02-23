@@ -7,28 +7,64 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Js </h1>
+    <h1 id="js">Java script </h1>
+    <div id="bg"></div>
+    <button  onclick="changetext()">Submit</button>
     <script>
+        
         // console.log("hii")
         //variables
-        var i="Akanksha";
-        console.log(i)
+        // var i="Akanksha";
+        // console.log(i)
         // var num="25"
         // var num2="20"
 
         // console.log(num+num2)
 
-        let a="hello"
-        console.log(a)
+        // let a="hello"
+        // console.log(a)
 
-        const b="akanksha"
-        console.log(b)
+        // const b="akanksha"
+        // console.log(b)
 
-        const name="Akanksha"
-        const Regno="22MCA10137"
-        // console.log("my name is :"+ name+" and registration no. is :"+ Regno)
+        // const name="Akanksha"
+        // const Regno="22MCA10137"
+        // // console.log("my name is :"+ name+" and registration no. is :"+ Regno)
 
-        console.log(`my name is ${name} my registration no. is ${Regno}`)
+        // console.log(`my name is ${name} my registration no. is ${Regno}`)
+
+        // function a(name){
+        //     console.log(`my name is ${name}`)
+
+        // }
+        // a("akanksha");
+
+        // const a=(name) => console.log(name)
+        // a("5")
+    //    const ab= prompt()       
+    //    console.log(ab)
+
+    //    document.getElementById("js").innerText=ab;
+    
+    const  changetext =()=>{
+        const demo=document.querySelector("#js")
+        document.querySelector("#js").innerHTML  = "Akanksha"
+        // document.querySelector("#js").innerHTML.style.backgroundColor=blue
+        demo.innerHtml="Akanksha"
+        demo.style.backgroundColor="blue"
+        demo.style.color="white"
+
+    }
+    const bg=()=>{
+        const ab=document.querySelector("#bg")
+        
+        ab.style.backgroundColor="pink"
+       }
+
+        
+        
+
+
 
 
     </script>
