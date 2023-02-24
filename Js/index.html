@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+   
 </head>
-<body>
+<body id="dark">
     <h1 id="js">Java script </h1>
-    <div id="bg"></div>
-    <button  onclick="changetext()">Submit</button>
+    <!-- <div id="bg"></div> -->
+    <button  id="btn" onclick="changetext()">dark theme</button>
     <script>
         
         // console.log("hii")
@@ -46,23 +47,52 @@
 
     //    document.getElementById("js").innerText=ab;
     
-    const  changetext =()=>{
-        const demo=document.querySelector("#js")
-        document.querySelector("#js").innerHTML  = "Akanksha"
-        // document.querySelector("#js").innerHTML.style.backgroundColor=blue
-        demo.innerHtml="Akanksha"
-        demo.style.backgroundColor="blue"
-        demo.style.color="white"
+    // const  changetext =()=>{
+    //     const demo=document.querySelector("#js")
+    //     document.querySelector("#js").innerHTML  = "Akanksha"
+    //     // document.querySelector("#js").innerHTML.style.backgroundColor=blue
+    //     demo.innerHtml="Akanksha"
+    //     demo.style.backgroundColor="blue"
+    //     demo.style.color="white"
 
+    // }
+    // const bg=()=>{
+    //     const ab=document.querySelector("#bg")
+    //     ab.style.backgroundColor="pink"
+    //    }
+
+    // let theme;
+    const changetext=()=>{
+      let  theme=document.querySelector("#dark")
+      let b = document.querySelector("#btn")
+    //     theme.style.backgroundColor="black"
+    //     theme.style.color="white"
+    // }
+    // const again=()=>{
+    //     theme=document.querySelector("#dark")
+        if(theme.style.backgroundColor=="white"){
+            theme.style.backgroundColor="black"
+            theme.style.color="white"
+            b.innerHTML="Light theme"
+        }
+
+        else{
+            theme.style.backgroundColor="white"
+            theme.style.color="black"
+            b.innerHTML="dark theme"
+            // b= document.getElementById("btn").innerText="light theme"
+            // b.innerHTML="light theme"
+
+        }
     }
-    const bg=()=>{
-        const ab=document.querySelector("#bg")
-        
-        ab.style.backgroundColor="pink"
-       }
+    // const button=()=>{
+    //     theme=document.querySelector("#dark")
+    //     if(theme.style.backgroundColor!="white"){
+    //         document.getElementById(btn).innerText="light theme"
+    //     }
+    // }
 
-        
-        
+
 
 
 
