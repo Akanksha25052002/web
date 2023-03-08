@@ -1,3 +1,5 @@
+/*  This is javascript code with the help of which we make our calculator workable.  */
+
 (function(){
 // const ab=()=>{
 
